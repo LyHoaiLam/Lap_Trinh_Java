@@ -16,6 +16,7 @@ public class Employee
         name = input.nextLine();
         System.out.println("Nhap Tuoi: ");
         old = input.nextInt();
+        input.nextLine();
         System.out.println("Nhap Dia Chi: ");
         address = input.nextLine();
     }
