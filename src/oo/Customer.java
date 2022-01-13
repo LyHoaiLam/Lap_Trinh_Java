@@ -12,7 +12,7 @@ public class Customer
 
     void nhaptt()
     {
-        System.out.println("Nhap Tuoi: ");
+        System.out.println("Nhap Ten: ");
         name = input.nextLine();
         System.out.println("Nhap Tuoi: ");
         old = input.nextInt();
