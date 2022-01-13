@@ -1,4 +1,4 @@
-package No_Structured;
+package non_Structured;
 // Không cấu trúc
 
 import java.util.Scanner;
