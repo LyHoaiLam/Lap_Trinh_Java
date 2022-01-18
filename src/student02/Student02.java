@@ -14,11 +14,11 @@ public class Student02
     
     Student02(String n, String gt, int t, String k, double d)
     {
-        name = n;
-        gioiTinh = gt;
-        tuoi = t;
-        khoa = k;
-        diemTB = d;
+        this.name = n;
+        this.gioiTinh = gt;
+        this.tuoi = t;
+        this.khoa = k;
+        this.diemTB = d;
     }
 
     void show()
@@ -28,5 +28,6 @@ public class Student02
         System.out.println("Tuoi: "+ tuoi);
         System.out.println("Khoa: "+ khoa);
         System.out.println("Diem Trung Binh: "+ diemTB);
+        System.out.println();
     }
 }

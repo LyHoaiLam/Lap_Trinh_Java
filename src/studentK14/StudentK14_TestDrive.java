@@ -15,7 +15,7 @@ public class StudentK14_TestDrive
         {
             studenK14.nhapThongTinStudent();      
             studenK14.show();
-            System.out.println("1. Nhap Tieo ");
+            System.out.println("1. Nhap Lai Thong Tin ");
             System.out.println("2. Thoat Ra");
             cs = input.nextInt();
             System.out.println("-----------------------------------------");
