@@ -43,7 +43,10 @@ public class ChuongTrinh_TestDrive
         {
             Amoeba amoeba = new Amoeba("hinhAmoeba.afl");
             amoeba.xoayHinhAmoeba();
-            amoeba.phatAmThanhAmoeba();
+
+            System.out.println("-----------------------------");
+            Amoeba amoeba2 = new Amoeba("amoebe.hif", 2.3, 7);
+            amoeba2.xoayHinhAmoeba();
         }
 
     

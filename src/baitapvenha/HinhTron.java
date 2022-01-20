@@ -2,7 +2,10 @@ package baitapvenha;
 
 public class HinhTron 
 {
-    String soundFile = "hinhTron.afl";
+    // Attribute
+    String soundFile;
+
+    // Method
     HinhTron()
     {
 
@@ -22,6 +25,6 @@ public class HinhTron
     void phatAmThanhHinhTron()
     {
       
-        System.out.println("play soundFile: "+ this.soundFile);
+        System.out.println("Play soundFile: "+ this.soundFile);
     }
 }

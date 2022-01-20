@@ -2,14 +2,15 @@ package baitapvenha;
 
 public class HinhChuNhat 
 {
-    String soundFile = "hinhChuNhat.afl";
+    // Attribute
+    String soundFile;;
 
-
+    // Method
     HinhChuNhat()
     {
 
     }
-    // method
+
     public HinhChuNhat(String soundFile)
     {
         this.soundFile = soundFile;

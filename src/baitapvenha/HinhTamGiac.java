@@ -2,8 +2,10 @@ package baitapvenha;
 
 public class HinhTamGiac 
 {
-    String soundFile = "hinhTamGiac.afl";
+    // Attribute
+    String soundFile;;
     
+    // Method
     HinhTamGiac()
     {
 
@@ -21,6 +23,6 @@ public class HinhTamGiac
 
     void phatAmThanhHinhTamGiac()
     {
-        System.out.println("play soundFile: "+ this.soundFile);
+        System.out.println("Play soundFile: "+ this.soundFile);
     }
 }
