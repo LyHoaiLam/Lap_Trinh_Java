@@ -2,8 +2,7 @@ package baitapvenha;
 
 public class HinhChuNhat 
 {
-    String hinhChuNhat;
-    String fileNhacHinhChuNhat;
+    String soundFile = "hinhChuNhat.afl";
 
 
     HinhChuNhat()
@@ -11,16 +10,22 @@ public class HinhChuNhat
 
     }
 
+  
+
+    // method
+    public HinhChuNhat(String soundFile)
+    {
+        this.soundFile = soundFile;
+    }
+
     void xoayHinhChuNhat()
     {
-        hinhChuNhat = "Xoay Hinh Chu Nhat";
-        System.out.println(hinhChuNhat);
+        System.out.println("Xoay 360 ");
     }
 
     void phatAmThanhNhacHinhChuNhat()
     {
-        fileNhacHinhChuNhat = "Phat Ra Am Thanh Hinh Chu Nhat";
-        System.out.println(fileNhacHinhChuNhat);
+        System.out.println("Play soundFile: " + this.soundFile);
     }
 
 }

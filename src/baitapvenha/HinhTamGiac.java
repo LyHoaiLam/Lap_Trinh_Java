@@ -2,22 +2,26 @@ package baitapvenha;
 
 public class HinhTamGiac 
 {
-    String hinhTamGiac;
-    String fileNhacHinhTamGiac;
+    String soundFile = "hinhTamGiac.afl";
     HinhTamGiac()
     {
 
     }   
+
+   
+
+    public HinhTamGiac(String soundFile)
+    {
+        this.soundFile = soundFile;
+    }
     
     void xoayHinhTamGiac()
     {
-        hinhTamGiac = "Xoay Hinh Tam Giac";
-        System.out.println(hinhTamGiac);
+        System.out.println("Xoay 360 ");
     }
 
     void phatAmThanhHinhTamGiac()
     {
-        fileNhacHinhTamGiac = "Phat Ra Am Thanh Hinh Tam Giac";
-        System.out.println(fileNhacHinhTamGiac);
+        System.out.println("play soundFile: "+ this.soundFile);
     }
 }

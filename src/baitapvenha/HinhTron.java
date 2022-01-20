@@ -2,22 +2,27 @@ package baitapvenha;
 
 public class HinhTron 
 {
-    String hinhTron;
-    String fileNhacHinhTron;
+    String soundFile = "hinhTron.afl";
     HinhTron()
     {
 
     }   
+
+    public HinhTron(String soundFile)
+    {
+        this.soundFile = soundFile;
+    }
+   
     
     void xoayHinhTron()
     {
-        hinhTron = "Xoay Hinh Tron";
-        System.out.println(hinhTron);
+       
+        System.out.println("Xoay 360");
     }
 
     void phatAmThanhHinhTron()
     {
-        fileNhacHinhTron = "Phat Ra Am Thanh Hinh Tron";
-        System.out.println(fileNhacHinhTron);
+      
+        System.out.println("play soundFile: "+ this.soundFile);
     }
 }
