@@ -11,11 +11,11 @@ public class Bank_Structured
 
     // data Employee
     // data Customer
-    static String employee_Name;// Tên nhân viên
-    static double salary;// lương
+    static String employee_Name;
+    static double salary;
 
-    static String customer_Name;// Tên khác hàng
-    static String address;// Địa chỉ
+    static String customer_Name;
+    static String address;
 
 
 
@@ -42,7 +42,7 @@ public class Bank_Structured
         int depositAmount;// Số lượng tiền gửi
         depositAmount = input.nextInt();
         account_balance = account_balance + depositAmount;
-        // account_balance += depositAmount
+        // account_balance += depositAmount tương đương câu lện ở trên (account_balance += depositAmount tương đương  account_balance = account_balance + depositAmount)
     }
 
     static void withdraw()// Rút Tiền
