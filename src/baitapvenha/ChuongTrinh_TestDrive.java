@@ -20,28 +20,28 @@ public class ChuongTrinh_TestDrive
 
         if( chonChucNang == 1)
         {
-            HinhTron hinhTron = new HinhTron("Kkakakakaka");
+            HinhTron hinhTron = new HinhTron("hinhTron.afl");
             hinhTron.xoayHinhTron();
             hinhTron.phatAmThanhHinhTron();
         }
 
         if( chonChucNang == 2)
         {
-            HinhTamGiac hinhTamGiac = new HinhTamGiac("Hhahahahah");
+            HinhTamGiac hinhTamGiac = new HinhTamGiac("hinhTamGiac.afl");
             hinhTamGiac.xoayHinhTamGiac();
             hinhTamGiac.phatAmThanhHinhTamGiac();
         }
 
         if( chonChucNang == 3)
         {
-            HinhChuNhat hinhChuNhat = new HinhChuNhat("Hihihihi");
+            HinhChuNhat hinhChuNhat = new HinhChuNhat("hinhChuNhat.afl");
             hinhChuNhat.xoayHinhChuNhat();
             hinhChuNhat.phatAmThanhNhacHinhChuNhat();
         }
 
         if( chonChucNang == 4)
         {
-            Amoeba amoeba = new Amoeba("Jjajajaj");
+            Amoeba amoeba = new Amoeba("hinhAmoeba.afl");
             amoeba.xoayHinhAmoeba();
             amoeba.phatAmThanhAmoeba();
         }

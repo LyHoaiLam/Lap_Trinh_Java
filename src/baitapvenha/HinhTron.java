@@ -12,8 +12,7 @@ public class HinhTron
     {
         this.soundFile = soundFile;
     }
-   
-    
+     
     void xoayHinhTron()
     {
        

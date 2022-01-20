@@ -4,6 +4,11 @@ public class Amoeba
 {
     String soundFile;
 
+    Amoeba()
+    {
+        
+    }
+
     public Amoeba(String soundFile)
     {
         this.soundFile = soundFile;

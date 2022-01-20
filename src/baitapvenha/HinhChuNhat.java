@@ -9,9 +9,6 @@ public class HinhChuNhat
     {
 
     }
-
-  
-
     // method
     public HinhChuNhat(String soundFile)
     {
