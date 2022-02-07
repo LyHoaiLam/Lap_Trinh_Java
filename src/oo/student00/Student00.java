@@ -1,8 +1,7 @@
-package studentK14;
-
+package oo.student00;
 import java.util.Scanner;
 
-public class StudenK14 
+public class Student00 
 {
     Scanner input = new Scanner(System.in);
     String name_Student;
@@ -10,18 +9,17 @@ public class StudenK14
     int old_Student;
     String address_Student;
 
-    StudenK14()
+    Student00()// Constructor không tham số (Default Constructor)
     {
 
     }
 
-    StudenK14(String n, int ms, int o, String ad)
+    Student00(String n, int ms, int o, String ad)// Constructor 4 tham số
     {
         name_Student = n;
         mssv = ms;
         old_Student = o;
         address_Student = ad;
-
     }
 
     void nhapThongTinStudent()
@@ -43,6 +41,5 @@ public class StudenK14
         System.out.println("MSSV: "+ mssv);
         System.out.println("Tuoi: "+ old_Student);
         System.out.println("Que Quan: "+ address_Student);
-    }
-
+    }    
 }

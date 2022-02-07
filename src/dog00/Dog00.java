@@ -22,12 +22,10 @@ public class Dog00
         if(size > 14)
         {
             System.out.println("Gau Gau");
-
         }
         else
         {
             System.out.println("Ang Ang");
-
         }
     }
 
@@ -39,6 +37,6 @@ public class Dog00
     void run()
     {
         System.out.println("Running");
-        this.bark();
+        this.bark();// this có thể gọi method vào method
     }
 }

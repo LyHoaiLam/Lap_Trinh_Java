@@ -9,7 +9,6 @@ public class Employee_TestDrive
         Employee employee = new Employee();
 
         employee.Nhaptt();
-        employee.Show();
-        
+        employee.Show();        
     }    
 }
