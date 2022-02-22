@@ -10,7 +10,7 @@ public class Switch_Example
         System.out.println("Enter you grade");// Nhập điểm
         String userInpput = input.nextLine();
 
-        char grade = userInpput.charAt(0);
+        char grade = userInpput.charAt(0);// 0 Lấy ký tự đầu tiên mà người nhập vào từ bàn phím ( Theo Câu Lệnh Switch A,B,C,D,F)
 
         switch(grade)
         {
@@ -40,5 +40,17 @@ public class Switch_Example
                 System.out.println("Error ! Invalid grade. ");
             }
         }
+
+        String name = "Hello World";
+        char ch = name.charAt(6);// Vị trí số 6 của Chuỗi Hello World là "W"
+        System.out.println("Vi tri thu 6 "+ch);
+        System.out.println("Vi tri thu 4 "+ name.charAt(4));
+        System.out.println("Vi tri thu 5 "+ name.charAt(5));
+        System.out.println("Vi tri thu 7 "+ name.charAt(7));
+        // Phương thức charAt() trả về giá trị Char của chuỗi tại vị trí có 
+        // chỉ số index đc chỉ định. Index bắt đầu bằng 0
+        // Tìm ký tư tại một vị trí cụ thể
+        
+
     }    
 }
