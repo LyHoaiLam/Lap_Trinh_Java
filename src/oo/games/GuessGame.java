@@ -40,11 +40,11 @@ public class GuessGame
 
                 // Lấy kết quả đoán của từng đấu thủ
                 guessp1 = player1.number;
-                System.out.println("Player one guessed (TOI DANG DOAN) "+ guessp1);
+                System.out.println("Player one guessed "+ guessp1);
                 guessp2 = player2.number;
-                System.out.println("Player two guessed (TOI DANG DOAN)"+ guessp2);
+                System.out.println("Player two guessed "+ guessp2);
                 guessp3 = player3.number;
-                System.out.println("Player three guessed (TOI DNAG DOAN) "+ guessp3);
+                System.out.println("Player three guessed "+ guessp3);
 
                 // Kiểm tra từng người xem đoán đúng không. Nếu đúng thì đặt biến của người đó về True
                 // Nhớ rằng ta đã đặt giá trị mặc định của các biến đó là False
