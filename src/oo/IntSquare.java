@@ -2,7 +2,7 @@ package oo;
 
 public class IntSquare 
 {
-    double squareValue;
+    private double squareValue;
     double getSquareOperator(int value)
     {
         this.squareValue = value * value;

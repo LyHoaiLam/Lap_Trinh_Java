@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class SanPham01 
 {
-    String nameSanPham;
-    double giaSanPham;
-    double giamGiaSabPham;
+    private String nameSanPham;
+    private double giaSanPham;
+    private double giamGiaSabPham;
     
     Scanner input = new Scanner(System.in);
 

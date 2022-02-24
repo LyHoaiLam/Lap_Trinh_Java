@@ -5,9 +5,9 @@ public class GuessGame
 {
 
         // 3 biến thực thể dành cho 3 đối tượng Player
-        Player player1;
-        Player player2;
-        Player player3;
+        private Player player1;
+        private Player player2;
+        private Player player3;
         
         void StartGame()
         {
