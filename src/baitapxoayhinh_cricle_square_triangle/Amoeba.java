@@ -1,4 +1,4 @@
-package baitapvenha;
+package baitapxoayhinh_cricle_square_triangle;
 
 public class Amoeba 
 {
@@ -27,13 +27,13 @@ public class Amoeba
         this.yPoint = y;
     }
 
-    void xoayHinhAmoeba()
+    void Rotate()
     {
         System.out.println("Xoay 360 at xPoint: "+ this.xPoint +" yPoint: "+ this.yPoint);
-        this.phatAmThanhAmoeba();// Có thể đem mothod khác vào method khác để sử dụng
+        this.PlaySound();// Có thể đem mothod khác vào method khác để sử dụng
     }
 
-    void phatAmThanhAmoeba()
+    void PlaySound()
     {
         System.out.println("play SoundFile:: "+ this.soundFile);
     }

@@ -1,4 +1,4 @@
-package baitapvenha;
+package baitapxoayhinh_cricle_square_triangle;
 
 import java.util.Scanner;
 
@@ -21,32 +21,32 @@ public class ChuongTrinh_TestDrive
         if( chonChucNang == 1)
         {
             HinhTron hinhTron = new HinhTron("hinhTron.afl");
-            hinhTron.xoayHinhTron();
-            hinhTron.phatAmThanhHinhTron();
+            hinhTron.Rotate();
+            hinhTron.PlaySound();
         }
 
         if( chonChucNang == 2)
         {
             HinhTamGiac hinhTamGiac = new HinhTamGiac("hinhTamGiac.afl");
-            hinhTamGiac.xoayHinhTamGiac();
-            hinhTamGiac.phatAmThanhHinhTamGiac();
+            hinhTamGiac.Rotate();
+            hinhTamGiac.PlaySound();
         }
 
         if( chonChucNang == 3)
         {
             HinhChuNhat hinhChuNhat = new HinhChuNhat("hinhChuNhat.afl");
-            hinhChuNhat.xoayHinhChuNhat();
-            hinhChuNhat.phatAmThanhNhacHinhChuNhat();
+            hinhChuNhat.Rotate();
+            hinhChuNhat.PlaySound();
         }
 
         if( chonChucNang == 4)
         {
             Amoeba amoeba = new Amoeba("hinhAmoeba.afl");
-            amoeba.xoayHinhAmoeba();
+            amoeba.Rotate();
 
             System.out.println("-----------------------------");
             Amoeba amoeba2 = new Amoeba("amoebe.hif", 2.3, 7);
-            amoeba2.xoayHinhAmoeba();
+            amoeba2.Rotate();
         }
 
     

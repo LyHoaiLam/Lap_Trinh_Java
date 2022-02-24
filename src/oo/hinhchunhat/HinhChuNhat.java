@@ -38,8 +38,8 @@ public class HinhChuNhat
 
     public String toString()
     {
-        String string = "Chieu Dai: "+ this.chieuDai +" "+ "Chieu Rong: " + this.chieuRong;
-        string += "Chu Vi: "+ this.chuVi() + "Dien Tich: "+ this.dienTich(); 
+        String string = " Chieu Dai: "+ this.chieuDai +" "+ " Chieu Rong: " + this.chieuRong;
+        string += " Chu Vi: "+ this.chuVi() + " Dien Tich: "+ this.dienTich(); 
         return string;
     }
 

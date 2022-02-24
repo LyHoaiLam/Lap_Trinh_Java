@@ -1,4 +1,4 @@
-package baitapvenha;
+package baitapxoayhinh_cricle_square_triangle;
 
 public class HinhChuNhat 
 {
@@ -16,12 +16,12 @@ public class HinhChuNhat
         this.soundFile = soundFile;
     }
 
-    void xoayHinhChuNhat()
+    void Rotate()
     {
         System.out.println("Xoay 360 ");
     }
 
-    void phatAmThanhNhacHinhChuNhat()
+    void PlaySound()
     {
         System.out.println("Play soundFile: " + this.soundFile);
     }

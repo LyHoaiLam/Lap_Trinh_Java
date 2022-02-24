@@ -1,30 +1,27 @@
-package baitapvenha;
+package baitapxoayhinh_cricle_square_triangle;
 
-public class HinhTron 
+public class Shape 
 {
-    // Attribute
-    String soundFile;
-
-    // Method
-    HinhTron()
+    private String soundFile;
+    Shape()
     {
 
     }   
 
-    public HinhTron(String soundFile)
+    public Shape(String soundFile)
     {
         this.soundFile = soundFile;
     }
      
-    void xoayHinhTron()
+    void Rotate()
     {
        
         System.out.println("Xoay 360");
     }
 
-    void phatAmThanhHinhTron()
+    void PlaySound()
     {
       
         System.out.println("Play soundFile: "+ this.soundFile);
-    }
+    }    
 }
