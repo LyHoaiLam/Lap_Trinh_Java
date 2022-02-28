@@ -1,6 +1,6 @@
 package baitapxoayhinh_cricle_square_triangle;
 
-public class Cricle extends HinhTron
+public class Cricle extends Shape
 {
-
+    
 }
