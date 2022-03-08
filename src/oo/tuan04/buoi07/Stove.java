@@ -5,5 +5,6 @@ public class Stove
     double width;
     double lenght;
     int numOfCookers;
+
         
 }
