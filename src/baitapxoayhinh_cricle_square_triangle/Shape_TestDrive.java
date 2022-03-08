@@ -24,6 +24,8 @@ public class Shape_TestDrive
          amoeba.setYPoint(10);
          amoeba.setSoundFile("HoaiLam.nknsdk");
          amoeba.RotateAmoeba();
+         amoeba.PlaySoundAmoeba();
+         amoeba.PlaySound();
 
          
     }    
