@@ -11,5 +11,7 @@ public class Cat_TestDrive
         cat.Catch_The_Mouse();
         cat.Climb();
         cat.MakeNoise();    
+        cat.chase_Butterfly();
+        // Ghi đè (Override) hay còn gọi là thực thi hợp đồng
     }    
 }

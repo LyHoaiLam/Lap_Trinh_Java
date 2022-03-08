@@ -1,6 +1,6 @@
 package oo.animal;
 
-public class Cat extends Animal 
+public class Cat extends Feline 
 {
     @Override
     protected void MakeNoise() 
@@ -9,9 +9,9 @@ public class Cat extends Animal
     }
 
     @Override
-    protected void Eat() 
-    {
-        System.out.println("Eating Com Nha");    
+    protected void Eat() {
+        // TODO Auto-generated method stub
+        super.Eat();
     }
 
     void Catch_The_Mouse()// Bắt Chuột
@@ -23,6 +23,11 @@ public class Cat extends Animal
     {
         System.out.println("Leo Cay");
         System.out.println("Leo Tuong");
+    }
+
+    void chase_Butterfly()
+    {
+        System.out.println("Bat Buom");
     }
 
     

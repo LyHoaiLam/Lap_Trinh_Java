@@ -1,6 +1,6 @@
 package oo.animal;
 
-public class Lion extends Animal
+public class Lion extends Feline
 {
     @Override// Ghi de
     protected void MakeNoise() 

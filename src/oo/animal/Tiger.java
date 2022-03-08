@@ -1,12 +1,8 @@
 package oo.animal;
 
-public class Tiger extends Animal 
+public class Tiger extends Feline
 {
-    public void Nup_Bui()
-    {
-        System.out.println("Nup Bui Rinh Con Moi");
-    }
-
+   
     @Override
     protected void MakeNoise() 
     {
