@@ -6,7 +6,7 @@ public class MyWindows extends JFrame
 {   
     public MyWindows()
     {
-        super("Demo Windows");
+        super("Ly Hoai Lam 2008110053");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }       
 }

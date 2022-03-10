@@ -3,7 +3,6 @@ package baitapxoayhinh_cricle_square_triangle;
 public class Shape // Hình dạng
 {
     private String soundFile;
-    //Override Ghi đè ( Cài đè ) 
     Shape()
     {
 

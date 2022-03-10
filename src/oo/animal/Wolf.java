@@ -1,6 +1,6 @@
 package oo.animal;
 
-public class Wolf extends Animal 
+public class Wolf extends Canini
 {
     public void Kieu_Hu()
     {
