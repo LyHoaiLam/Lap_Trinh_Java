@@ -8,6 +8,8 @@ public class Bus_TestDrive
         Inner_City_Bus inner_City_Bus = new Inner_City_Bus();
         inner_City_Bus.Enter_Bus_Information();
         System.out.println(inner_City_Bus.So_Tien_Thu_Duoc_La());
+        System.out.println(inner_City_Bus.toString());
+        System.out.println("--------------------------------------------------");
         
        
     }    
