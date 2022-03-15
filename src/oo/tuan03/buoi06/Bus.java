@@ -7,13 +7,11 @@ public class Bus
 
     Scanner input = new Scanner(System.in);
 
-    protected int bus_Code;// Mã Chuyến Xe
-    protected String driver_Name;// Tên Tài Xế
-    protected int soXe;
+    protected int bus_Code;
+    protected String driver_Name;
+    protected int so_Xe;
     protected double doanhThu;
 
-    protected final double soTienTren1KM = 13000;// Số Tiền Trên 1km
-    
     protected void set_Ma_So_Chuyen_Xe(int bus_Code)
     {
         this.bus_Code = bus_Code;
@@ -34,14 +32,14 @@ public class Bus
         return this.driver_Name;
     }
 
-    protected void set_So_Tuyen(int soTuyen)
+    protected void set_So_Xe(int so_Xe)
     {
-        this.soXe = soTuyen;
+        this.so_Xe = so_Xe;
     }
 
-    protected int get_So_Tuyen()
+    protected int get_So_Xe()
     {
-        return this.soXe;
+        return this.so_Xe;
     }
     protected void set_Doanh_Thu(double doanhThu)
     {
@@ -54,19 +52,23 @@ public class Bus
     }
 
 
-    protected Bus()// Constructor mặc định
+    protected Bus()
     {
 
     }
 
-    protected Bus(int bus_Code, String driver_Name, double doanhThu)// Constructor 3 Tham Số ( Class Cha )
+
+    protected Bus(int bus_Code, String driver_Name, int so_Xe, double doanhThu)
     {
+
         this.set_Ma_So_Chuyen_Xe(bus_Code);
         this.set_Ho_Ten_Tai_Xe(driver_Name);
+        this.so_Xe = so_Xe;
         this.set_Doanh_Thu(doanhThu);
     }
 
-    protected void Enter_Bus_Information()// Nhập
+
+    protected void Enter_Bus_Information()// Hàm Nhập
     {
         System.out.println("BUS CODE ? : ");
         this.bus_Code = input.nextInt();
@@ -74,19 +76,12 @@ public class Bus
         System.out.println("DRIVER IS NAME ? : ");
         this.driver_Name  = input.nextLine();
     }
-
-    protected void Print_Bus_Information()// In Thông Tin
-    {
-        System.out.println("Bus Code: "+ this.bus_Code);
-        System.out.println("Driver Is Name: "+ this.driver_Name);
-        System.out.println("So Tuyen Xe: "+ this.soXe);
-    }
+    
 
     public String toString()
     {
-        String string = " BUS CODE IS : " + this.bus_Code + " DRIVER NAME IS: "+ this.driver_Name +
-         " SO XE: " + this.soXe;
-        
+        String string = " BUS CODE IS : " + this.bus_Code + " / " + " DRIVER NAME IS: "+ this.driver_Name
+        + " / " + " SO XE: " + this.so_Xe;       
         return string;
     }
 

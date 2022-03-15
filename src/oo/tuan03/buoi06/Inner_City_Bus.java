@@ -2,58 +2,70 @@ package oo.tuan03.buoi06;
 
 public class Inner_City_Bus extends Bus // Xe Bus Nội Thành
 {
-       private int soTuyen;
-       private double soKM_Di_Duoc;
+       private int so_Tuyen;
+       private double so_KM_Di_Duoc;
+       private double so_Tien_Loi_Tren_1KM = 14000;
 
-       public void setSoKM_Di_Duoc(double soKM_Di_Duoc) 
+       public void setSoKM_Di_Duoc(double so_KM_Di_Duoc) 
        {
-           this.soKM_Di_Duoc = soKM_Di_Duoc;
+           this.so_KM_Di_Duoc = so_KM_Di_Duoc;
        }
 
        public double getSoKM_Di_Duoc() 
        {
-           return soKM_Di_Duoc;
+           return so_KM_Di_Duoc;
        }
 
-       public void setSoTuyen(int soTuyen) 
+       public void setSoTuyen(int so_Tuyen) 
        {
-           this.soTuyen = soTuyen;
+           this.so_Tuyen = so_Tuyen;
        }
 
        public int getSoTuyen() 
        {
-           return soTuyen;
+           return so_Tuyen;
        }
 
-       Inner_City_Bus()// ConsTructor Mặc Định ( Class Con )
+
+       Inner_City_Bus()
        {
-
+        
        }
 
-       Inner_City_Bus(int bus_Code, String driver_Name, int soTuyen, double doanhThu, int sp, double soKM_Di_Duoc)// Constructor 6 Tham Số ( Class Con ). Có Super.Constructor Class Cha Bên Trong
+
+
+       Inner_City_Bus(int bus_Code, String driver_Name, int so_Xe, int soTuyen, double doanhThu, int sp, double soKM_Di_Duoc)
        {
-           super(bus_Code, driver_Name, doanhThu);
-           this.soKM_Di_Duoc = soKM_Di_Duoc;
-           this.soTuyen = sp;
+           super(bus_Code, driver_Name, so_Xe, doanhThu);
+           this.so_KM_Di_Duoc = soKM_Di_Duoc;
+           this.so_Tuyen = sp;
        }
+
 
        @Override
        public void Enter_Bus_Information() {
            super.Enter_Bus_Information();
            System.out.println("So Tuyen ");
-           soTuyen = input.nextInt();
+           so_Tuyen = input.nextInt();
            System.out.println("So KM Di Duoc ");
-           soKM_Di_Duoc = input.nextDouble();
+           so_KM_Di_Duoc = input.nextDouble();
        }
 
-       public double So_Tien_Thu_Duoc_La()// Tính Tiền Chuyến Xe
+
+       public double tinh_Tien_Xe_Noi_Thanh()
        {
-           return this.soKM_Di_Duoc * super.soTienTren1KM;
+            //return this.so_KM_Di_Duoc * this.so_Tien_Loi_Tren_1KM;
+            super.doanhThu = this.so_KM_Di_Duoc * this.so_Tien_Loi_Tren_1KM;
+            return super.doanhThu;
+
        }
 
+       
        @Override
        public String toString() 
        {
-            return "Inner City Bus: " + super.toString() + " So Tuyen: " + this.soTuyen + " So KM Di: " + this.soKM_Di_Duoc + " Doanh Thu: " + this.So_Tien_Thu_Duoc_La();    
+        //super.doanhThu = this.tinh_Tien_Xe_Noi_Thanh();
+            return "Inner City Bus: " + super.toString() + " / " + " So Tuyen: " + this.so_Tuyen
+             + " / " + " So KM Di: " + this.so_KM_Di_Duoc + " / " + " Doanh Thu: " + this.tinh_Tien_Xe_Noi_Thanh();    
        }
 }
