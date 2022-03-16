@@ -48,9 +48,6 @@ public class Suburban_Bus extends Bus // Xe Bus Ngoại Thành
     }
 
 
-
-    
-
     @Override
     public void Enter_Bus_Information() 
     {
