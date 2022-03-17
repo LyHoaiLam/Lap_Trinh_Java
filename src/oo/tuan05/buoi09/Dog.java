@@ -3,7 +3,7 @@ package oo.tuan05.buoi09;
 public class Dog extends Canine implements Pet, Interface_Name
 {
     @Override
-    protected void MakeNoise() 
+    public void MakeNoise() 
     {
         System.out.println("GAU GAU");        
     }   
@@ -24,21 +24,18 @@ public class Dog extends Canine implements Pet, Interface_Name
     @Override
     public void play() 
     {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void setName(String name) 
     {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void getName() 
     {
-        // TODO Auto-generated method stub
         
     }
 }

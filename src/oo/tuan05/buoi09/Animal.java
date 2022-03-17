@@ -3,7 +3,7 @@ package oo.tuan05.buoi09;
  public abstract class Animal 
 {
     private String name;
-    /*private String picture;
+    private String picture;
     private String food;
     private int hunger;
     
@@ -38,11 +38,10 @@ package oo.tuan05.buoi09;
     int get_Hunger()
     {
         return this.hunger;
-    }*/
+    }
 
-    // Behavior
 
-    protected abstract void MakeNoise();
+    public abstract void MakeNoise();
     
     protected void Sleep()
     {

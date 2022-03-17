@@ -5,14 +5,12 @@ public class Hippo extends Animal
     @Override
     protected void MakeNoise() 
     {
-        // TODO Auto-generated method stub
-        
+        System.out.println("Hippo Kieu ");        
     }
     
     @Override
     protected void Eat() 
     {
-        // TODO Auto-generated method stub
         
     }
 }

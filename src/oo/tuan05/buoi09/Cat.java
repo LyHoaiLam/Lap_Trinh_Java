@@ -3,15 +3,15 @@ package oo.tuan05.buoi09;
 public class Cat extends Filine implements Pet
 {
     @Override
-    protected void MakeNoise() 
+    public void MakeNoise() 
     {
-        System.out.println("6666666666666");
+        System.out.println("Meow Moew");
     }
 
     @Override
     protected void Eat() 
     {
-        System.out.println("999999999999999999999");
+        System.out.println("Eat Mouse");
     }
 
     @Override
