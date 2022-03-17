@@ -4,19 +4,22 @@ public class Hero  extends Action_Charater implements Interface_NhanVat
 {
 
     @Override
-    public void CanFight() {
+    public void CanFight() 
+    {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void CanSwim() {
+    public void CanSwim() 
+    {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void CanFly() {
+    public void CanFly() 
+    {
         // TODO Auto-generated method stub
         
     }

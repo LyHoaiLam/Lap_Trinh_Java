@@ -4,12 +4,14 @@ public class Wolf extends Canine
 {
    
     @Override
-    protected void MakeNoise() {
+    protected void MakeNoise() 
+    {
         System.out.println("Noise*****************");
     }// Concrete Class CLASS CỤ THỂ
 
     @Override
-    protected void Eat() {
+    protected void Eat() 
+    {
         // TODO Auto-generated method stub
         
     }

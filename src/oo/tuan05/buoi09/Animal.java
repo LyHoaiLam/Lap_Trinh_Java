@@ -44,14 +44,14 @@ package oo.tuan05.buoi09;
 
     protected abstract void MakeNoise();
     
-    protected void Sleep()// Ngủ
+    protected void Sleep()
     {
         System.out.println("Sleeping");
     }
 
     protected abstract void Eat();
    
-    protected void Roam()// Đi Lang Thang
+    protected void Roam()
     {
         System.out.println("Running");
     }

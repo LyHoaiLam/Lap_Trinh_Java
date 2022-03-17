@@ -4,19 +4,22 @@ public class Robot_Dog extends Robot implements Pet
 {
 
     @Override
-    public void beDriendly() {
+    public void beDriendly() 
+    {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void play() {
+    public void play() 
+    {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    protected void fly() {
+    protected void fly() 
+    {
         // TODO Auto-generated method stub
         
     }
