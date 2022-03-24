@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class QuanLyNhaDat 
+abstract public class QuanLyNhaDat 
 {
     protected Scanner scanner = new Scanner(System.in);
     protected int ma_Gia_Dich;

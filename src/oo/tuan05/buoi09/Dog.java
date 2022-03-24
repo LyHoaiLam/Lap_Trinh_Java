@@ -33,9 +33,6 @@ public class Dog extends Canine implements Pet, Interface_Name
         
     }
 
-    @Override
-    public void getName() 
-    {
-        
-    }
+    
+   
 }

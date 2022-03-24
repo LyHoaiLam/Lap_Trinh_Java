@@ -1,9 +1,13 @@
 package oo.tuan05.buoi10;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import oo.tuan05.buoi09.Animal;
 import oo.tuan05.buoi09.Cat;
 import oo.tuan05.buoi09.Dog;
 import oo.tuan05.buoi09.Pet;
+import oo.tuan05.buoi09.Robot_Dog;
 
 public class DaHinhMang 
 {
@@ -36,6 +40,20 @@ public class DaHinhMang
             p.beDriendly();
             p.play();
         }*/
+
+        List<Pet> listPet = new ArrayList<>();
+        Dog dogPet = new Dog();
+        Robot_Dog robot_DogPet = new Robot_Dog();
+        Cat catPet = new Cat();
+
+        listPet.add(dogPet);
+        listPet.add(robot_DogPet);
+        listPet.add(catPet);
+
+        for (Pet pet2 : listPet) 
+        {
+            pet2.beDriendly();
+        }
 
 
     }    

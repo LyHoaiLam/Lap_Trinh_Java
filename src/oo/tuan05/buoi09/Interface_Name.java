@@ -4,5 +4,5 @@ public interface Interface_Name
 {
     void setName(String name);
     
-    void getName();    
+    //void getName();    
 }

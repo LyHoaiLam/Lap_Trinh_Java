@@ -6,6 +6,16 @@ package oo.tuan05.buoi09;
     private String picture;
     private String food;
     private int hunger;
+
+    public void setName(String name) 
+    {
+        this.name = name;
+    }
+
+    public String getName() 
+    {
+        return name;
+    }
     
     
     void set_Picture(String picture)

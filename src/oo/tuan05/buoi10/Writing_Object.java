@@ -15,7 +15,7 @@ public class Writing_Object
     public static void main(String[] args) throws IOException 
     {
         //1
-        FileOutputStream outputStream = new FileOutputStream("data.lam");
+        FileOutputStream outputStream = new FileOutputStream("hoailam3999.lam");
 
         //2
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
