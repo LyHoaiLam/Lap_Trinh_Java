@@ -1,11 +1,13 @@
 package oo.tuan06.buoi11;
 
 import java.util.Date;
+import java.util.Scanner;
 
 public class GiaoDich_TestDrive 
 {
     public static void main(String[] args) 
     {
+        Scanner scanner = new Scanner(System.in);
         DanhSachGiaoDich danhSachGiaoDich = new DanhSachGiaoDich();
 
         //GiaoDichDat0 giaoDichDat0 = new GiaoDichDat0("GD01", new Date(), 13000, 5, 'B');
@@ -26,6 +28,11 @@ public class GiaoDich_TestDrive
         System.out.println(giaoDichNha02);
         System.out.println(giaoDichNha02.Tinh_Tien());
         System.out.println("***********************************************");
+
+        int chon_Chuc_Nang;
+        
+            
+
         //danhSachGiaoDich.Tinh_Tong_So_Luong_Tung_Loai();
 
         //System.out.println("Dat: " + danhSachGiaoDich.getSo_Luong_Giao_Dich_Dat());
@@ -33,5 +40,15 @@ public class GiaoDich_TestDrive
 
         //System.out.println(giaoDichDat0.Tinh_Tien());
         //System.out.println(giaoDichDat02.Tinh_Tien());
+
+
+        /*do
+        {
+            System.out.println("---------------- MENU -----------------");
+            System.out.println("Nhap Chuc Nang");
+            chon_Chuc_Nang = scanner.nextInt();
+
+        }while(chon_Chuc_Nang >= 0 && chon_Chuc_Nang <= 3);*/
+        
     }    
 }

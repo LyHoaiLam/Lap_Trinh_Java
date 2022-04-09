@@ -4,10 +4,11 @@ import java.util.Date;
 
 public abstract class GiaoDich 
 {
-    private String ma_Giao_Dich;
+    public String ma_Giao_Dich;
     private Date ngay_Giao_Dich;
     private double don_Gia;
     private double dien_Tich;
+    private static int count;// Đếm xem hàm tạo được tạo bao nhiêu lần ( tạo bao nhiêu danh sách có bấy nhiêu giao dịch )
 
     public void setMa_Giao_Dich(String ma_Giao_Dich) 
     {
@@ -49,9 +50,13 @@ public abstract class GiaoDich
         return don_Gia;
     }
 
+    private void tang_Count()
+    {
+        count++;
+    }
     public GiaoDich()
     {
-
+        this.tang_Count();
     }
 
     public GiaoDich(String ma_Giao_Dich, Date ngay_Giao_Dich, double don_Gia, double dien_Tich)

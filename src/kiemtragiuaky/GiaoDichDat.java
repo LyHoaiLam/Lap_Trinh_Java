@@ -4,16 +4,16 @@ import java.util.Date;
 
 public class GiaoDichDat extends QuanLyNhaDat
 {
-    protected String loai_Dat;
+    protected char loai_Dat;
     protected double dien_Tich;
     
 
-    public void setLoai_Dat(String loai_Dat) 
+    public void setLoai_Dat(char loai_Dat) 
     {
         this.loai_Dat = loai_Dat;
     }
 
-    public String getLoai_Dat() 
+    public char getLoai_Dat() 
     {
         return loai_Dat;
     }
@@ -33,7 +33,7 @@ public class GiaoDichDat extends QuanLyNhaDat
 
     }
 
-    public GiaoDichDat(int ma_Giao_Dich, Date date, double don_Gia, double dien_Tich, String loai_Dat)
+    public GiaoDichDat(String ma_Giao_Dich, Date date, double don_Gia, double dien_Tich, char loai_Dat)
     {
         super(ma_Giao_Dich, date, don_Gia, dien_Tich);
         this.setLoai_Dat(loai_Dat);
@@ -41,20 +41,20 @@ public class GiaoDichDat extends QuanLyNhaDat
 
     public double tinh_Tien_Gia_Dat()
     {
-        /*if(this.loai_Dat == "b")
+        if(this.loai_Dat == 'B')
         {
             super.thanh_Tien = super.dien_Tich * this.don_Gia;
         }
 
-        if(this.loai_Dat == "c")
+        if(this.loai_Dat == 'C')
         {
             super.thanh_Tien = super.dien_Tich * this.don_Gia;
         }
-
-        if(this.loai_Dat == "a")
+        
+        if(this.loai_Dat == 'A')
         {
             super.thanh_Tien = super.dien_Tich * this.don_Gia * 1.5;
-        }*/
+        }
         super.thanh_Tien = super.dien_Tich * super.don_Gia;
         return super.thanh_Tien;
     }
@@ -62,8 +62,8 @@ public class GiaoDichDat extends QuanLyNhaDat
     @Override
     public void Nhap_Thong_Tin() {
         super.Nhap_Thong_Tin();
-        System.out.println("Loai Dat: ( a / b / c / Viet Thuong) ");
-        this.loai_Dat = scanner.nextLine();
+        System.out.println("Loai Dat: ( A / B / C / Viet In Hoa) ");
+        this.loai_Dat = scanner.nextLine().charAt(loai_Dat);
       
     }
 

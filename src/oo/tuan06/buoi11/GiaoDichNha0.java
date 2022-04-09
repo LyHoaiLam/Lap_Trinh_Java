@@ -29,12 +29,12 @@ public class GiaoDichNha0 extends GiaoDich
         return dia_Chi;
     }
 
-    GiaoDichNha0()
+    public GiaoDichNha0()
     {
 
     }
 
-    GiaoDichNha0(String ma_Giao_Dich, Date ngay_Giao_Dich, double don_Gia, double dien_Tich,String loai_Nha, String dia_Chi)
+    public GiaoDichNha0(String ma_Giao_Dich, Date ngay_Giao_Dich, double don_Gia, double dien_Tich,String loai_Nha, String dia_Chi)
     {
         super(ma_Giao_Dich, ngay_Giao_Dich, don_Gia, dien_Tich);
         this.loai_Nha = loai_Nha;

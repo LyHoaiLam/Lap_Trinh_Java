@@ -42,6 +42,7 @@ public class DanhSachGiaoDich
         }
     }
 
+
     public void Tinh_Tong_So_Luong_Tung_Loai()
     {
         for (GiaoDich giaoDich_666 : danh_Sach_Giao_Dich) 
@@ -57,6 +58,7 @@ public class DanhSachGiaoDich
         }
     }
 
+
     public double Tinh_Tong_TB_Giao_Dich_Dat()
     {
         double tien_Giao_Dich_Dat = 0;
@@ -69,8 +71,14 @@ public class DanhSachGiaoDich
                 tien_Giao_Dich_Dat += giaoDich256.Tinh_Tien();
             }
         }
-
         return tien_Giao_Dich_Dat / dem;
+    }
+
+   
+
+    public void Xoa_Giao_Dich(GiaoDich giaoDich)
+    {
+        this.danh_Sach_Giao_Dich.remove(giaoDich);
     }
 
 

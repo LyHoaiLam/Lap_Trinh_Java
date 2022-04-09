@@ -8,7 +8,7 @@ import java.util.Scanner;
 abstract public class QuanLyNhaDat 
 {
     protected Scanner scanner = new Scanner(System.in);
-    protected int ma_Gia_Dich;
+    protected String ma_Gia_Dich;
     protected Date date_Giao_Dich;    
     protected double don_Gia;
     protected double thanh_Tien;
@@ -24,12 +24,12 @@ abstract public class QuanLyNhaDat
         return dien_Tich;
     }
 
-    public void setMa_Gia_Dich(int ma_Gia_Dich) 
+    public void setMa_Gia_Dich(String ma_Gia_Dich) 
     {
         this.ma_Gia_Dich = ma_Gia_Dich;
     }
 
-    public int getMa_Gia_Dich() 
+    public String getMa_Gia_Dich() 
     {
         return ma_Gia_Dich;
     }
@@ -69,7 +69,7 @@ abstract public class QuanLyNhaDat
 
     }
 
-    public QuanLyNhaDat(int ma_Giao_Dich, Date date_Giao_Dich, double don_Gia,  double dien_Tich)
+    public QuanLyNhaDat(String ma_Giao_Dich, Date date_Giao_Dich, double don_Gia,  double dien_Tich)
     {
         this.setMa_Gia_Dich(ma_Gia_Dich);
         this.setDate_Giao_Dich(date_Giao_Dich);
@@ -80,7 +80,7 @@ abstract public class QuanLyNhaDat
     public void Nhap_Thong_Tin()
     {
         System.out.println("Ma Giao Dich: ");
-        this.ma_Gia_Dich = scanner.nextInt();
+        this.ma_Gia_Dich = scanner.nextLine();
         scanner.nextLine();
         System.out.println("Ngay Giao Dich: He Thong Tu Cap Nhat Ngay Tren Thiet Bi Cua Ban ( Khong Can Nhap ) ");
         this.date_Giao_Dich = new Date();

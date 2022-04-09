@@ -21,7 +21,7 @@ public class GiaoDichNha extends QuanLyNhaDat
 
     }
 
-    public GiaoDichNha(int ma_Giao_Dich, Date date_Giao_Dich, double don_Gia, double dien_Tich,String loai_Nha)
+    public GiaoDichNha(String ma_Giao_Dich, Date date_Giao_Dich, double don_Gia, double dien_Tich,String loai_Nha)
     {
         super(ma_Giao_Dich, date_Giao_Dich, don_Gia, dien_Tich);
         this.setLoai_Nha(loai_Nha);

@@ -11,6 +11,7 @@ public class QuanLyGiaoDich
     protected Date date_Giao_Dich;
     protected double don_Gia;
     protected double so_Luong;
+    private String ngay_Giao_D;
     protected Scanner scanner = new Scanner(System.in);
 
     public void set_Date_Giao_Dich(Date date_Giao_Dich) 
@@ -41,8 +42,9 @@ public class QuanLyGiaoDich
         System.out.println("Ma Giao Dich: ");
         this.ma_Giao_Dich = scanner.nextInt();
         scanner.nextLine();
-        //System.out.println("Ngay Giao Dich: ");
-        //this.date_Giao_Dich = scanner.
+        System.out.println("Ngay Giao Dich: ");
+        this.ngay_Giao_D = scanner.nextLine();
+
         System.out.println("Don Gia: ");
         this.don_Gia = scanner.nextDouble();
         System.out.println("So Luong: ");
