@@ -1,6 +1,9 @@
 package kiemtracuoiky;
 
-public class SanhSu 
+public class SanhSu extends QuanLyHangHoa
 {
-    
+    SanhSu()
+    {
+        
+    }
 }

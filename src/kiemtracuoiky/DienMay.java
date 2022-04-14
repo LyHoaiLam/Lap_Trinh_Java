@@ -1,6 +1,9 @@
 package kiemtracuoiky;
 
-public class DienMay 
+public class DienMay extends QuanLyHangHoa
 {
-    
+    DienMay()
+    {
+        
+    }
 }

@@ -1,6 +1,9 @@
 package kiemtracuoiky;
 
-public class ThucPham 
+public class ThucPham extends QuanLyHangHoa
 {
-    
+    ThucPham()
+    {
+        
+    }
 }
