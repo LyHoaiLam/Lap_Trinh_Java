@@ -1,12 +1,24 @@
 package onlaibaihoc.animal;
 
-public class Animal_OnLai 
+public abstract class Animal_OnLai 
 {
     private String picture;
     private String food;
     private int hunger;
+
+    Animal_OnLai()
+    {
+
+    }
+
+    Animal_OnLai(String picture, String food, int hunger)
+    {
+        this.picture = picture;
+        this.food = food;
+        this.hunger = hunger;
+    }
     
-    protected void make_Noise()
+    protected abstract void make_Noise();
     {
         System.out.println("Making Noise..........");
     }
@@ -16,10 +28,7 @@ public class Animal_OnLai
         System.out.println("Sleping..............");
     }
 
-    protected void eat()
-    {
-        System.out.println("Eating............");
-    }
+     protected abstract void eat ();
 
     protected void roam()
     {

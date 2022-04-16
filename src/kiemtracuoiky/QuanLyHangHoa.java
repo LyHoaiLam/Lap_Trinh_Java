@@ -2,11 +2,25 @@ package kiemtracuoiky;
 
 public abstract class QuanLyHangHoa 
 {
-    String ma_Hang_Hoa;
-    String  ten_Hang_Hoa;
-    int so_Luong_Ton; // >= 0
-    double don_Gia; // > 0
-    double thue_VAT;
+    private String ma_Hang_Hoa;
+    protected String  ten_Hang_Hoa;
+    protected int so_Luong_Ton; // >= 0
+    protected double don_Gia; // > 0
+    protected double thue_VAT;
+
+    public QuanLyHangHoa()
+    {
+
+    }
+
+    public QuanLyHangHoa(String ma_Hang_Hoa, String ten_Hang_Hoa, int so_Luong_Ton, double don_Gia, double thue_VAT)
+    {
+        this.ma_Hang_Hoa = ma_Hang_Hoa;
+        this.ten_Hang_Hoa = ten_Hang_Hoa;
+        this.so_Luong_Ton = so_Luong_Ton;
+        this.don_Gia = don_Gia;
+        this.thue_VAT = thue_VAT;
+    }
 
     private void setMa_Hang_Hoa(String ma_Hang_Hoa) 
     {

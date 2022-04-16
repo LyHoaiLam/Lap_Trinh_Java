@@ -10,6 +10,7 @@ public class DanhSachQuanLyHangHoa
     private int so_Luong_ThucPham;
     private int so_Luong_DienMay;
     private int so_Luong_SanhSu;
+    private int tong_So_Luong_Tat_Ca_Cac_Hang_Hoa;
     List<QuanLyHangHoa> danhSachQuanLyHangHoa = new ArrayList<>();
 
     public void Add_QuanLyHangHoa(QuanLyHangHoa quanLyHangHoa)
@@ -28,5 +29,10 @@ public class DanhSachQuanLyHangHoa
         {
             System.out.println(quanLyHangHoa);    
         }
+    }
+
+    public void Set_QuanLyHangHoa(int index,QuanLyHangHoa quanLyHangHoa)
+    {
+        danhSachQuanLyHangHoa.set(index, quanLyHangHoa);
     }
 }

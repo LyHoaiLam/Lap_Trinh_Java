@@ -2,7 +2,7 @@ package kiemtracuoiky;
 
 public class SanhSu extends QuanLyHangHoa
 {
-    SanhSu()
+    public SanhSu()
     {
         
     }

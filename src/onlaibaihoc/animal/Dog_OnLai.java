@@ -1,6 +1,6 @@
 package onlaibaihoc.animal;
 
-public class Dog_OnLai extends Animal_OnLai
+public class Dog_OnLai extends Canine_OnLai
 {
     @Override
     protected void make_Noise() 

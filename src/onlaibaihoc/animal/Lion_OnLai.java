@@ -22,4 +22,9 @@ public class Lion_OnLai extends Animal_OnLai
         // TODO Auto-generated method stub
         System.out.println("Lion Roam");
     }
+
+    protected void QuanhNhau()
+    {
+
+    }
 }

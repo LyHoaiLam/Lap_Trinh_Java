@@ -2,7 +2,7 @@ package kiemtracuoiky;
 
 public class DienMay extends QuanLyHangHoa
 {
-    DienMay()
+    public DienMay()
     {
         
     }
