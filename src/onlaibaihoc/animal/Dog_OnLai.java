@@ -1,18 +1,16 @@
 package onlaibaihoc.animal;
 
-public class Dog_OnLai extends Canine_OnLai
+public class Dog_OnLai extends Canine_OnLai implements Pet_OnLai
 {
     @Override
     protected void make_Noise() 
     {
-        // TODO Auto-generated method stub
         System.out.println("Dog Noise");
     }
 
     @Override
     protected void eat() 
     {
-        // TODO Auto-generated method stub
         System.out.println("Dog Eat");
     }
 
@@ -25,4 +23,18 @@ public class Dog_OnLai extends Canine_OnLai
     {
         System.out.println("Giu Nha");
     }
+
+    @Override
+    public void beFiendLy() 
+    {
+        System.out.println("Ban Than VS Con Nguoi");
+    }
+
+    @Override
+    public void play_With_Human() 
+    {
+        System.out.println("Choi Dua VS Con Nguoi");
+    }
+
+    
 }

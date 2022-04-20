@@ -1,6 +1,8 @@
 package onlaibaihoc;
 
-public class QuanLySinhVien_DonGian 
+import java.io.Serializable;
+
+public class QuanLySinhVien_DonGian implements Serializable
 {
     private int ma_So_Sinh_Vien;
     private String ho_Va_Ten;
@@ -47,12 +49,12 @@ public class QuanLySinhVien_DonGian
         return diem_Thuc_Hanh;
     }
 
-    QuanLySinhVien_DonGian()
+    public QuanLySinhVien_DonGian()
     {
 
     }
 
-    QuanLySinhVien_DonGian(int ma_So_Sinh_Vien, String ho_Va_Ten, double diem_Ly_Thuyet, double diem_Thuc_Hanh)
+    public QuanLySinhVien_DonGian(int ma_So_Sinh_Vien, String ho_Va_Ten, double diem_Ly_Thuyet, double diem_Thuc_Hanh)
     {
         this.ma_So_Sinh_Vien = ma_So_Sinh_Vien;
         this.ho_Va_Ten = ho_Va_Ten;

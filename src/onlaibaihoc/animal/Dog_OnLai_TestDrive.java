@@ -11,5 +11,7 @@ public class Dog_OnLai_TestDrive
         dog_OnLai.GiuNha();
         dog_OnLai.sleep();    
         dog_OnLai.eat();
+        dog_OnLai.beFiendLy();
+        dog_OnLai.play_With_Human();
     }    
 }

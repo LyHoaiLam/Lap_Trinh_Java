@@ -1,6 +1,8 @@
 package kiemtracuoiky;
 
-public class DienMay extends QuanLyHangHoa
+import java.io.Serializable;
+
+public class DienMay extends QuanLyHangHoa implements Serializable
 {
     public DienMay()
     {

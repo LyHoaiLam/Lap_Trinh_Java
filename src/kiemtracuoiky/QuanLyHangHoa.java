@@ -1,6 +1,8 @@
 package kiemtracuoiky;
 
-public abstract class QuanLyHangHoa 
+import java.io.Serializable;
+
+public abstract class QuanLyHangHoa implements Serializable
 {
     private String ma_Hang_Hoa;
     protected String  ten_Hang_Hoa;
