@@ -31,13 +31,13 @@ public class ConsoleInputing
             String dia_Chi = scanner.nextLine();
             System.out.println("Nhap Loai Nha: ");
             String loai_Nha = scanner.nextLine();
-            //giaoDich = new GiaoDichNha0(ma_Giao_Dich, ngay_Giao_Dich, don_Gia, dien_Tich, loai_Nha, dia_Chi);
+            giaoDich = new GiaoDichNha0(ma_Giao_Dich, ngay_Giao_Dich, don_Gia, dien_Tich, loai_Nha, dia_Chi);
         }
         else
         {
             System.out.println("Nhap Loai Dat: ");
             char loai_Dat = scanner.nextLine().charAt(0);
-            //giaoDich = new GiaoDichDat0(ma_Giao_Dich, ngay_Giao_Dich, don_Gia, dien_Tich, loai_Dat);
+            giaoDich = new GiaoDichDat0(ma_Giao_Dich, ngay_Giao_Dich, don_Gia, dien_Tich, loai_Dat);
         }
 
         return giaoDich;
