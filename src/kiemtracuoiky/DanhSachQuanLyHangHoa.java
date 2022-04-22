@@ -35,7 +35,6 @@ public class DanhSachQuanLyHangHoa
     {
         return tong_So_Luong_Tat_Ca_Cac_Hang_Hoa;
     }
-    
 
     List<QuanLyHangHoa> danhSachQuanLyHangHoa = new ArrayList<>();
 
@@ -72,16 +71,11 @@ public class DanhSachQuanLyHangHoa
         {
             if(quanLyHangHoa22.getMa_Hang_Hoa().equalsIgnoreCase(nhap_Ma_Hang_Hoa));    
             {
-                quanLyHangHoa11 = quanLyHangHoa22;
-                System.out.println(quanLyHangHoa22);
-                
-                
+                quanLyHangHoa11 = quanLyHangHoa22;                
             }
-        }
-        
+        }       
         return quanLyHangHoa11;
     }
-
    
     public QuanLyHangHoa NhapHangHoa() throws ParseException
     {
@@ -107,8 +101,7 @@ public class DanhSachQuanLyHangHoa
         String ngay_San_Xuat;
         String ngay_Het_Han;
         String ngay_Nhap_Kho;
-
-       
+          
         if(loai_Hang ==1)
         {
             System.out.println("Nha Cung Cap: ");
@@ -120,9 +113,7 @@ public class DanhSachQuanLyHangHoa
 
             Date datesx = new SimpleDateFormat("dd/MM/yyyy").parse(ngay_San_Xuat);
             Date dateshh= new SimpleDateFormat("dd/MM/yyyy").parse(ngay_Het_Han);
-
-            
-            
+         
             quanLyHangHoa = new ThucPham(ma_Hang_Hoa, ten_Hang_Hoa, so_Luong_Ton, don_Gia, nha_Cung_Cap, datesx,dateshh);
         }
 
@@ -131,7 +122,7 @@ public class DanhSachQuanLyHangHoa
             System.out.println("Cong Suat KW: ");
             double cong_Xuat_KW = scanner.nextDouble();
             scanner.nextLine();
-            System.out.println("Thoi Gian Bao Hanh: ");
+            System.out.println("Thoi Gian Bao Hanh ( Tinh Theo Thang ): ");
             int thoi_Gian_Bao_Hanh = scanner.nextInt();
             
             quanLyHangHoa = new DienMay(ma_Hang_Hoa, ten_Hang_Hoa, so_Luong_Ton, don_Gia, cong_Xuat_KW, thoi_Gian_Bao_Hanh);

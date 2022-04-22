@@ -54,14 +54,11 @@ public class ThucPham extends QuanLyHangHoa implements Serializable
         this.setNha_Cung_Cap(nha_Cung_Cap);
         this.setNgay_San_Xuat(ngay_San_Xuat);
         this.setNgay_Het_Han(ngay_Het_Han);
-        
-
     }
 
     @Override
     public String toString()
     {
-
         super.setThue_VAT(0.05);
         return super.toString() + " Nha Cung Cap: " + this.getNha_Cung_Cap() + "/" 
          + " Ngay San Xuat: " + this.getNgay_San_Xuat() + "/" + " Ngay Het Han: " + this.getNgay_Het_Han() + " Thue VAT: " + super.getThue_VAT();

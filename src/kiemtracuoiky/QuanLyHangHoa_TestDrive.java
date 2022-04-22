@@ -61,10 +61,6 @@ public class QuanLyHangHoa_TestDrive
 
         FileInputStream fileInputStream2 = new FileInputStream("quanlyhanghoa.com");
         ObjectInputStream objectInputStream2 = new ObjectInputStream(fileInputStream2);*/
-        
-
-
-
 
         int chon_Chuc_Nang;
 
@@ -130,6 +126,8 @@ public class QuanLyHangHoa_TestDrive
                     System.out.println("Tim Hang Hoa Theo Ma Hang Hoa");
                     System.out.println("Nhap Ma Hang Hoa Can Tim: ");
                     String ma_Hang_Hoa = scanner.nextLine();
+                    danhSach_QLHH.tim_Hang_Hoa(ma_Hang_Hoa);
+
                     
                 }break;
 
