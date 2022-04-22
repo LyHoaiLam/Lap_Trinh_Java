@@ -3,6 +3,8 @@ package oo.tuan06.buoi11;
 import java.util.ArrayList;
 import java.util.List;
 
+import kiemtracuoiky.QuanLyHangHoa;
+
 public class DanhSachGiaoDich 
 {
     private List<GiaoDich> danh_Sach_Giao_Dich = new ArrayList<>();
@@ -57,6 +59,8 @@ public class DanhSachGiaoDich
             } 
         }
     }
+
+    
 
 
     public double Tinh_Tong_TB_Giao_Dich_Dat()

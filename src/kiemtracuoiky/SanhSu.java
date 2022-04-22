@@ -1,6 +1,7 @@
 package kiemtracuoiky;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class SanhSu extends QuanLyHangHoa implements Serializable
@@ -41,15 +42,11 @@ public class SanhSu extends QuanLyHangHoa implements Serializable
         this.setNgay_Nhap_Kho(ngay_Nhap_Kho);
     }
 
-
-
-
-    
     @Override
     public String toString() 
     {
         super.setThue_VAT(0.1);
-        return super.toString() + " Ngay San Xuat: " + this.getNgay_San_Xuat() + "/" +
+        return super.toString() + " Ngay San Xuat: " + this.ngay_San_Xuat + "/" +
          " Ngay Nhap Kho: " + this.getNgay_Nhap_Kho() + " Thue VAT: " + super.getThue_VAT();
     }
 
