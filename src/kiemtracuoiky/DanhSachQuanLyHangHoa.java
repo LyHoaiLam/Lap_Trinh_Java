@@ -66,12 +66,14 @@ public class DanhSachQuanLyHangHoa
 
     public QuanLyHangHoa tim_Hang_Hoa(String nhap_Ma_Hang_Hoa)
     {
+
         QuanLyHangHoa quanLyHangHoa11 = null;
         for (QuanLyHangHoa quanLyHangHoa22 : danhSachQuanLyHangHoa) 
         {
             if(quanLyHangHoa22.getMa_Hang_Hoa().equalsIgnoreCase(nhap_Ma_Hang_Hoa));    
             {
-                quanLyHangHoa11 = quanLyHangHoa22;                
+                quanLyHangHoa11 = quanLyHangHoa22;  
+                System.out.println();  
             }
         }       
         return quanLyHangHoa11;

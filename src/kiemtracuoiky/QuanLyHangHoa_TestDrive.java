@@ -30,7 +30,7 @@ public class QuanLyHangHoa_TestDrive
         QuanLyHangHoa quanLyHangHoa06 = new SanhSu("SS012", "Chen Vang Nhat Ban", 52, 63000, new Date(), new Date());
         QuanLyHangHoa quanLyHangHoa07 = new DienMay("DM0577", "Quat May Cangagu", 4, 125000, 2.2, 12);
         QuanLyHangHoa quanLyHangHoa08 = new ThucPham("TP065", "Khoai Lang Nhat", 25, 45200, "Nhat Ban", new Date(), new Date());
-        QuanLyHangHoa quanLyHangHoa09 = new ThucPham("TP066", "Khoai Tay", 25, 45200, "Mien Tay", new Date(), new Date());
+        QuanLyHangHoa quanLyHangHoa09 = new ThucPham("TP0666", "Khoai Tay", 25, 45200, "Mien Tay", new Date(), new Date());
         
         // Dữ Liệu Có Sẵn Trong Danh Sách
         danhSach_QLHH.Add_QuanLyHangHoa(quanLyHangHoa00);
@@ -61,6 +61,7 @@ public class QuanLyHangHoa_TestDrive
 
         FileInputStream fileInputStream2 = new FileInputStream("quanlyhanghoa.com");
         ObjectInputStream objectInputStream2 = new ObjectInputStream(fileInputStream2);*/
+
 
         int chon_Chuc_Nang;
 

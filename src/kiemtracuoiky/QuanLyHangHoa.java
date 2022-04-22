@@ -30,8 +30,6 @@ public abstract class QuanLyHangHoa implements Serializable
         this.don_Gia = don_Gia;
     }
 
-   
-
     private void setMa_Hang_Hoa(String ma_Hang_Hoa) 
     {
         this.ma_Hang_Hoa = ma_Hang_Hoa;
