@@ -88,6 +88,7 @@ public class QuanLyHangHoa_TestDrive
                     do
                     {    
                             System.out.println("Them Hang Hoa Trong Danh Sach");
+
                             danhSach_QLHH.Add_QuanLyHangHoa(danhSach_QLHH.NhapHangHoa());
 
                             System.out.println("Bam Phim [1] De Tiep Tuc Nhap Them San Pham Vao Danh Sach: ");
@@ -128,17 +129,21 @@ public class QuanLyHangHoa_TestDrive
                     System.out.println("Nhap Ma Hang Hoa Can Tim: ");
                     String ma_Hang_Hoa = scanner.nextLine();
                     danhSach_QLHH.tim_Hang_Hoa(ma_Hang_Hoa);
+                    // System.out.println(danhSach_QLHH.tim_Hang_Hoa(ma_Hang_Hoa));
 
                     
                 }break;
 
                 case 5: // In Ra Danh Sach Tat Ca Cac Hang Hoa Co Trong Danh Sach
                 {
-
-                    System.out.println("In Ra Danh Sach Tat Ca Cac Hang Hoa Co Trong Danh Sach");
                     danhSach_QLHH.Print_Information_QuanLyHangHoa();
 
                 }break;
+
+                case 6:
+                {
+                    break;
+                }
 
                 default:
                 System.out.println("Chon Sai!!!!!!!!!!!!!");

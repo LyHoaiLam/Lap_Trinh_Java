@@ -36,18 +36,25 @@ public class DanhSachQuanLyHangHoa
         return tong_So_Luong_Tat_Ca_Cac_Hang_Hoa;
     }
 
+
     List<QuanLyHangHoa> danhSachQuanLyHangHoa = new ArrayList<>();
 
+
+    //Add HangHoa
     public void Add_QuanLyHangHoa(QuanLyHangHoa quanLyHangHoa)
     {        
         this.danhSachQuanLyHangHoa.add(quanLyHangHoa);
     }
 
+
+    //Remove HangHoa
     public void ReMoVe_QuanLyHangHoa(int index)
     {
         this.danhSachQuanLyHangHoa.remove(index);
     }
 
+
+    //Print HangHoa
     public void Print_Information_QuanLyHangHoa()
     {
         for (QuanLyHangHoa quanLyHangHoa : danhSachQuanLyHangHoa) 
@@ -58,12 +65,14 @@ public class DanhSachQuanLyHangHoa
         }
     }
 
+    //Update HangHoa
     public void Update_QuanLyHangHoa(int index,QuanLyHangHoa quanLyHangHoa)
     {
-        
         this.danhSachQuanLyHangHoa.set(index, quanLyHangHoa);
     }
 
+
+    //Find HangHoa
     public QuanLyHangHoa tim_Hang_Hoa(String nhap_Ma_Hang_Hoa)
     {
 
@@ -73,12 +82,17 @@ public class DanhSachQuanLyHangHoa
             if(quanLyHangHoa22.getMa_Hang_Hoa().equalsIgnoreCase(nhap_Ma_Hang_Hoa));    
             {
                 quanLyHangHoa11 = quanLyHangHoa22;  
-                System.out.println();  
+                // System.out.println(quanLyHangHoa11.getMa_Hang_Hoa().equalsIgnoreCase(nhap_Ma_Hang_Hoa));
+                if(quanLyHangHoa11.getMa_Hang_Hoa().equalsIgnoreCase(nhap_Ma_Hang_Hoa) == true){
+                    System.out.println(quanLyHangHoa11);
+                }
             }
         }       
         return quanLyHangHoa11;
     }
    
+
+    //Nhap HangHoa
     public QuanLyHangHoa NhapHangHoa() throws ParseException
     {
         QuanLyHangHoa quanLyHangHoa = null;
@@ -150,3 +164,5 @@ public class DanhSachQuanLyHangHoa
    
      
 }
+
+//Success all feature
